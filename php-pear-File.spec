@@ -6,7 +6,7 @@ Summary:	%{_pearname} - Common file and directory routines
 Summary(pl):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
 Version:	1.0.3
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	13b14cd0b226408bd09948f175bec677
