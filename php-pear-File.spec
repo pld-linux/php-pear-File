@@ -22,7 +22,7 @@ Provides easy access to read/write to files along with some common
 routines to deal with paths. Also provides interface for handling CSV
 files.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Dostarcza prosty dostêp do zapisu/odczytu plików razem z prostymi
