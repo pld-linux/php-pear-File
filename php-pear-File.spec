@@ -1,13 +1,12 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		File
 %define		_status		stable
-
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Common file and directory routines
 Summary(pl):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
-Version:	1.0.2
-Release:	5
+Version:	1.0.3
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
