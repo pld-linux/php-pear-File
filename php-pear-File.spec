@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		File
 %define		_pearname	%{_class}
-Summary:	%{_class} - Common file and directory routines
-Summary(pl):	%{_class} - Podstawowe sposoby operacji na plikach i katalogach
+Summary:	%{_pearname} - Common file and directory routines
+Summary(pl):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
 Release:	3
