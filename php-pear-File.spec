@@ -2,16 +2,16 @@
 %define		_class		File
 %define		_status		stable
 %define		_pearname	%{_class}
+
 Summary:	%{_pearname} - Common file and directory routines
 Summary(pl):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-%define		_suf	RC5
-Release:	0.%{_suf}.1
-License:	PHP 2.02
+Release:	1
+License:	PHP
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_suf}.tgz
-# Source0-md5:	e824ed517559a80df0f8bd594210e5fb
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	40da456898ca860b75ce5c527b1cd745
 URL:		http://pear.php.net/package/File/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -33,20 +33,20 @@ CSV.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c -n %{name}-%{version}%{_suf}
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
-install %{_pearname}-%{version}%{_suf}/*.php $RPM_BUILD_ROOT%{php_pear_dir}
-install %{_pearname}-%{version}%{_suf}/%{_class}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}
+install %{_pearname}-%{version}/%{_class}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}%{_suf}/tests/*
+%doc %{_pearname}-%{version}/tests/*
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}
