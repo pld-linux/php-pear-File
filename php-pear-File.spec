@@ -2,12 +2,11 @@
 %define		_class		File
 %define		_status		stable
 %define		_pearname	%{_class}
-
 Summary:	%{_pearname} - Common file and directory routines
 Summary(pl):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
 Version:	1.2.2
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,7 +15,7 @@ URL:		http://pear.php.net/package/File/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
-Requires:	php-pear-PEAR
+Requires:	php-pear-PEAR-core
 Requires:	php-pcre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
