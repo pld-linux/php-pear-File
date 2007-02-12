@@ -3,7 +3,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Common file and directory routines
-Summary(pl):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
+Summary(pl.UTF-8):   %{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
 Version:	1.2.2
 Release:	6
@@ -29,16 +29,16 @@ files.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Dostarcza prosty dostêp do zapisu/odczytu plików razem z prostymi
-metodami operacji na ¶cie¿kach. Dostarcza tak¿e interfejsu do plików
+%description -l pl.UTF-8
+Dostarcza prosty dostÄ™p do zapisu/odczytu plikÃ³w razem z prostymi
+metodami operacji na Å›cieÅ¼kach. Dostarcza takÅ¼e interfejsu do plikÃ³w
 CSV.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -47,7 +47,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
