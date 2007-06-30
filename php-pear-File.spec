@@ -5,12 +5,12 @@
 Summary:	%{_pearname} - Common file and directory routines
 Summary(pl.UTF-8):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
-Version:	1.2.2
-Release:	6
+Version:	1.3.0
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	ba8f020b70fb6a37c6258e0e42033aad
+# Source0-md5:	9d806e98095f2b10373ac521a098d9ed
 URL:		http://pear.php.net/package/File/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
