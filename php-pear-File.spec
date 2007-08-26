@@ -6,7 +6,7 @@ Summary:	%{_pearname} - Common file and directory routines
 Summary(pl.UTF-8):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
 Version:	1.3.0
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
-%{php_pear_dir}/%{_class}
+%{php_pear_dir}/%{_class}/*
 
 %files tests
 %defattr(644,root,root,755)
