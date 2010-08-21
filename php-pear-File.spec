@@ -3,7 +3,7 @@
 %define		_status		alpha
 %define		_pearname	%{_class}
 %define		subver	alpha1
-%define		rel		2
+%define		rel		3
 Summary:	%{_pearname} - Common file and directory routines
 Summary(pl.UTF-8):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
@@ -18,8 +18,8 @@ BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.6.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.573
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-File_CSV
 Requires:	php-pear-File_Util
