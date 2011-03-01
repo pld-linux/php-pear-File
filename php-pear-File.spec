@@ -3,7 +3,7 @@
 %define		_status		alpha
 %define		_pearname	%{_class}
 %define		subver	alpha1
-%define		rel		3
+%define		rel		4
 Summary:	%{_pearname} - Common file and directory routines
 Summary(pl.UTF-8):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{_pearname}
