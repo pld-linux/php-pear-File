@@ -1,18 +1,15 @@
+%define		status		alpha
+%define		pearname	File
 %include	/usr/lib/rpm/macros.php
-%define		_class		File
-%define		_status		alpha
-%define		_pearname	%{_class}
-%define		subver	alpha1
-%define		rel		4
-Summary:	%{_pearname} - Common file and directory routines
-Summary(pl.UTF-8):	%{_pearname} - Podstawowe sposoby operacji na plikach i katalogach
-Name:		php-pear-%{_pearname}
+Summary:	%{pearname} - Common file and directory routines
+Summary(pl.UTF-8):	%{pearname} - Podstawowe sposoby operacji na plikach i katalogach
+Name:		php-pear-%{pearname}
 Version:	1.4.0
-Release:	0.%{subver}.%{rel}
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
-# Source0-md5:	517436d7e68f0b2d3e27b938371e0ff0
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	a14a44b2492deecc09dff0fef69c796a
 URL:		http://pear.php.net/package/File/
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.6.0
@@ -33,14 +30,14 @@ Provides easy access to read/write to files along with some common
 routines to deal with paths. Also provides interface for handling CSV
 files.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Dostarcza prosty dostęp do zapisu/odczytu plików razem z prostymi
 metodami operacji na ścieżkach. Dostarcza także interfejsu do plików
 CSV.
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
@@ -60,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}.php
+%{php_pear_dir}/File.php
