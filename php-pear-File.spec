@@ -5,7 +5,7 @@ Summary:	%{pearname} - Common file and directory routines
 Summary(pl.UTF-8):	%{pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{pearname}
 Version:	1.4.0
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
@@ -15,8 +15,8 @@ BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.6.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.573
+Requires:	php(core) >= 4.2.0
 Requires:	php(pcre)
-Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Requires:	php-pear-File_CSV
 Requires:	php-pear-File_Util
