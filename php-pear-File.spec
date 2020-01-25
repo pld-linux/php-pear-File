@@ -1,6 +1,5 @@
 %define		status		alpha
 %define		pearname	File
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Common file and directory routines
 Summary(pl.UTF-8):	%{pearname} - Podstawowe sposoby operacji na plikach i katalogach
 Name:		php-pear-%{pearname}
